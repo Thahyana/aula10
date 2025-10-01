@@ -1,46 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <title>TailwindCSSv4</title>
     <style>
         @import 'tailwindcss/base';
         @import 'tailwindcss/components';
         @import 'tailwindcss/utilities';
 
-        .dropdown-menu{
+        .dropdown-menu {
             transform: translateY(-10px);
             opacity: 0;
             visibility: hidden;
             transition: all 0.3s ease-in-out;
             pointer-events: none;
         }
+
         .dropdown:hover .dropdown-menu {
             transform: translateY(0);
             opacity: 1;
             visibility: visible;
             pointer-events: auto;
         }
-        .menu-link{
+
+        .menu-link {
             transition: all 0.3s ease;
         }
 
-        .dropdown:hover .arrow{
+        .dropdown:hover .arrow {
             transform: rotate(180deg);
         }
 
         .arrow {
             transition: transform 0.3s ease;
         }
-
     </style>
 </head>
+
 <body class="bg-gray-50 min-h-screen">
-    <header class="bg-white shadow-lg sticky top-0 z-50">
+    <header class="bg-white mt-1 shadow-lg sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-8">
-            <div class="flex justify-between items-center h-16">
+            <div class="flex justify-between h-16 pt-4">
                 <div class="flex-shrink-0">
                     <h1 class="text-2xl font-bold 
                     bg-gradient-to-r from-blue-600 to-purple-600 
@@ -59,14 +63,44 @@
                     hover:text-blue-600 px-4 rounded-md
                     text-sm font-medium hover:bg-blue-50 transition-colors duration-200">
 
-                        HOME
+                        Home
                     </a>
-                    <div class="dropdown relativo">
-                        <button class="menu-link text-gray-700
+                    <div class="dropdown relative">
+                        <div class="dropdown relative list-none">
+                            <li>
+                                <button class="menu-link flex text-gray-700
                     hover:text-blue-600 px-4 rounded-md
                     text-sm font-medium hover:bg-blue-50 transition-colors duration-200">
-                            Serviços
-                        </button>
+                                    Serviços
+                            <li class="menu-link dropdown:hover arrow">
+
+                                <i class="ph ph-caret-down"></i>
+
+                            </li>
+
+                            </button>
+                            <ul class="flex-col overflow dropdown-menu absolute mt-2">
+                                <li>
+                                    <a href="#"></a>
+                                    <span class="flex cursor-pointer rounded-[10%]  hover:text-blue-600 px-4 rounded-md
+                    text-sm font-medium hover:bg-blue-50 transition-colors duration-200 mb-3 p-1">Landing page</span>
+                                </li>
+                                <li>
+                                    <a href="#"></a>
+                                    <span class="flex cursor-pointer rounded-[10%]  hover:text-blue-600 px-4 rounded-md
+                    text-sm font-medium hover:bg-blue-50 transition-colors duration-200 mb-3 p-1">Aplicativos
+                                        mobile</span>
+                                </li>
+                                <li>
+                                    <a href="#"></a>
+                                    <span class="flex cursor-pointer rounded-[10%]  hover:text-blue-600 px-4 rounded-md
+                    text-sm font-medium hover:bg-blue-50 transition-colors duration-200 mb-3 p-1">Consultoria de
+                                        TI</span>
+                                </li>
+                            </ul>
+                            </li>
+                        </div>
+
 
                     </div>
 
@@ -77,6 +111,7 @@
         </div>
 
     </header>
-    
+
 </body>
+
 </html>
