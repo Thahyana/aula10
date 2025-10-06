@@ -9,3 +9,4 @@ Esse projeto está sendo desenvolvido com as seguintes tecnologias:
 - HTML
 - CSS tailwind
 - Github
+- JavaScript
