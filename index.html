@@ -1,9 +1,8 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
-     <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -12,11 +11,11 @@
     <meta name="author" content="Thahyana Costa">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Fundamentos HTML" />
+    <meta property="og:title" content="CSS tailwind" />
     <meta property="og:description" content="Descrição da página em ate 160 caracteres" />
     <meta property="og:url" content="https://cheatsheets.zip/index" />
     <meta property="og:image" content="https://xxx.com/image.jpg" />
-    
+
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
 
@@ -139,7 +138,7 @@
                                             <ul
                                                 class="bg-orange-50 rounded-[5%] absolute left-full top-0 ml-1 min-w-[200px] shadow-lg">
                                                 <li class="cursor-pointer hover:text-blue-600 px-4 rounded-md
-                       text-lg font-medium hover:bg-blue-50 transition-colors duration-200 py-1">
+                       text-lg font-medium hover:bg-blue-50 transition-colors duration-200 p-1">
                                                     <a href="#">
 
 
@@ -147,7 +146,7 @@
                                                     </a>
                                                 </li>
                                                 <li class="cursor-pointer hover:text-blue-600 px-4 rounded-md
-                       text-lg font-medium hover:bg-blue-50 transition-colors duration-200 py-1">
+                       text-lg font-medium hover:bg-blue-50 transition-colors duration-200 p-1">
                                                     <a href="#">
 
 
@@ -155,7 +154,7 @@
                                                     </a>
                                                 </li>
                                                 <li class="cursor-pointer hover:text-blue-600 px-4 rounded-md
-                       text-lg font-medium hover:bg-blue-50 transition-colors duration-200 py-1">
+                       text-lg font-medium hover:bg-blue-50 transition-colors duration-200 p-1">
                                                     <a href="#">
 
 
@@ -176,98 +175,125 @@
 
     <main>
         <div class="carousel-container max-w-[1152px] w-full overflow-hidden relative mx-auto">
-        <div class="carousel-slide flex transition-transform duration-500 ease-in-out">
-            <img src="hamb1.jpg" alt="Um delicioso Hambúrguer" class="w-full h-[768px] object-cover flex-shrink-0">
-            <img src="hamb2.png" alt="Um delicioso Hambúrguer" class="w-full h-[768px] object-cover flex-shrink-0">
-            <img src="hamb3.png" alt="Um delicioso Hambúrguer" class="w-full h-[768px] object-cover flex-shrink-0">
-            <img src="hamb4.png" alt="Um delicioso Hambúrguer" class="w-full h-[768px] object-cover flex-shrink-0">
-        </div>
+            <div class="carousel-slide flex transition-transform duration-500 ease-in-out">
+                <img src="hamb1.jpg" alt="Um delicioso Hambúrguer" class="w-full h-[768px] object-cover flex-shrink-0">
+                <img src="hamb2.png" alt="Um delicioso Hambúrguer" class="w-full h-[768px] object-cover flex-shrink-0">
+                <img src="hamb3.png" alt="Um delicioso Hambúrguer" class="w-full h-[768px] object-cover flex-shrink-0">
+                <img src="hamb4.png" alt="Um delicioso Hambúrguer" class="w-full h-[768px] object-cover flex-shrink-0">
+            </div>
 
-        <button class="absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 text-white p-3 rounded-full hover:bg-black/70 transition-colors">
-            &#10094;
-        </button>
-        <button class="absolute right-4 top-1/2 -translate-y-1/2 bg-black/50 text-white p-3 rounded-full hover:bg-black/70 transition-colors">
-            &#10095;
-        </button>
+            <button
+                class="absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 text-white p-3 rounded-full hover:bg-black/70 transition-colors">
+                &#10094;
+            </button>
+            <button
+                class="absolute right-4 top-1/2 -translate-y-1/2 bg-black/50 text-white p-3 rounded-full hover:bg-black/70 transition-colors">
+                &#10095;
+            </button>
 
-        <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
-            <div class="w-3 h-3 rounded-full bg-white"></div>
-            <div class="w-3 h-3 rounded-full bg-white/50"></div>
-            <div class="w-3 h-3 rounded-full bg-white/50"></div>
-            <div class="w-3 h-3 rounded-full bg-white/50"></div>
+            <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+                <div class="w-3 h-3 rounded-full bg-white"></div>
+                <div class="w-3 h-3 rounded-full bg-white/50"></div>
+                <div class="w-3 h-3 rounded-full bg-white/50"></div>
+                <div class="w-3 h-3 rounded-full bg-white/50"></div>
+            </div>
         </div>
-    </div>
     </main>
     <script>
-    const carousel = document.querySelector('.carousel-slide');
-    const images = carousel.querySelectorAll('img');
-    const prevBtn = document.querySelector('.absolute.left-4');
-    const nextBtn = document.querySelector('.absolute.right-4');
-    const indicators = document.querySelectorAll('.bottom-4 > div');
-    
-    let currentIndex = 0;
+        const carousel = document.querySelector('.carousel-slide');
+        const images = carousel.querySelectorAll('img');
+        const prevBtn = document.querySelector('.absolute.left-4');
+        const nextBtn = document.querySelector('.absolute.right-4');
+        const indicators = document.querySelectorAll('.bottom-4 > div');
 
-    function updateCarousel() {
-        carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
-        
-        // Atualiza indicadores
-        indicators.forEach((dot, index) => {
-            dot.className = index === currentIndex 
-                ? 'w-3 h-3 rounded-full bg-white' 
-                : 'w-3 h-3 rounded-full bg-white/50';
+        let currentIndex = 0;
+
+        function updateCarousel() {
+            carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+
+            // Atualiza indicadores
+            indicators.forEach((dot, index) => {
+                dot.className = index === currentIndex
+                    ? 'w-3 h-3 rounded-full bg-white'
+                    : 'w-3 h-3 rounded-full bg-white/50';
+            });
+        }
+
+        nextBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % images.length;
+            updateCarousel();
         });
-    }
 
-    nextBtn.addEventListener('click', () => {
-        currentIndex = (currentIndex + 1) % images.length;
-        updateCarousel();
-    });
+        prevBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            updateCarousel();
+        });
 
-    prevBtn.addEventListener('click', () => {
-        currentIndex = (currentIndex - 1 + images.length) % images.length;
-        updateCarousel();
-    });
+        // Auto-play (opcional)
+        setInterval(() => {
+            currentIndex = (currentIndex + 1) % images.length;
+            updateCarousel();
+        }, 3000);
+    </script>
+    <footer>
+        <div>
+            <div>
+                <div>
 
-    // Auto-play (opcional)
-    setInterval(() => {
-        currentIndex = (currentIndex + 1) % images.length;
-        updateCarousel();
-    }, 3000);
-</script>
-<footer>
-    <div>
-        <img src="footer.png" alt="Baixe nosso aplicativo">
-    </div>
-    <div class="flex justify-center h-1px w-2px mt-5">
-        <img src="Burgz_logo_resized.png" alt="Logo Burgz">
-    </div>
-    <div >
-        <ul class="flex justify-evenly bg-[#ffb627ff] mt-1 shadow-lg sticky top-0 z-50">
-            <li class="cursor-pointer hover:text-blue-600 px-4 rounded-md
+                </div>
+                <img class="block" src="footer.png" alt="Baixe nosso aplicativo">
+                <div class="flex justify-end -my-60 mr-4">
+                    <div
+                        class="rounded-[5%] text-center p-3 border border-gray-200 border-3 bg-black text-white w-70 h-30 text-xl font-medium mr-20">
+                        <a href="#" class="flex justify-center mt-4">
+                            <i class="ph ph-apple-logo" style="font-size: 60px"></i>
+                            <span class="ml-3">Disponível na <br> App Store</span>
+                        </a>
+                    </div>
+                    <div
+                        class="rounded-[5%] text-center p-3 border border-gray-200 border-3 bg-black text-white w-70 h-30 text-xl font-medium mr-20">
+                        <a href="#" class="flex justify-center mt-4">
+                            <i class="ph ph-google-play-logo" style="font-size: 60px"></i>
+                            <span class="ml-3">Disponível no <br> Google play</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="block mt-100">
+            <div class="flex justify-center h-1px w-2px">
+                <img src="Burgz_logo_resized.png" alt="Logo Burgz">
+            </div>
+            <div>
+                <ul class="flex justify-evenly bg-[#ffb627ff] mt-1 shadow-lg sticky top-0 z-50">
+                    <li class="cursor-pointer hover:text-blue-600 px-4 rounded-md
                        text-xl font-medium hover:bg-blue-50 transition-colors duration-200 ">
-                <a href="#"></a>
-                <span>APP Burgz</span>
-            </li>
-            <li class="cursor-pointer hover:text-blue-600 px-4 rounded-md
+                        <a href="#"></a>
+                        <span>APP Burgz</span>
+                    </li>
+                    <li class="cursor-pointer hover:text-blue-600 px-4 rounded-md
                        text-xl font-medium hover:bg-blue-50 transition-colors duration-200 py-1">
-                <a href="#"></a>
-                <span>Sobre a Burgz</span>
-            </li>
-            <li class="cursor-pointer hover:text-blue-600 px-4 rounded-md
+                        <a href="#"></a>
+                        <span>Sobre a Burgz</span>
+                    </li>
+                    <li class="cursor-pointer hover:text-blue-600 px-4 rounded-md
                        text-xl font-medium hover:bg-blue-50 transition-colors duration-200 py-1">
-                <a href="#"></a>
-                <span>Trabalhe conosco</span>
-            </li>
-            <li class="cursor-pointer hover:text-blue-600 px-4 rounded-md
+                        <a href="#"></a>
+                        <span>Trabalhe conosco</span>
+                    </li>
+                    <li class="cursor-pointer hover:text-blue-600 px-4 rounded-md
                        text-xl font-medium hover:bg-blue-50 transition-colors duration-200 py-1">
-                <a href="#"></a>
-                <span>Seja um franqueado</span>
-            </li>
-        </ul>
-    </div>
-    <i class="ph ph-apple-logo"></i>
-    <i class="ph ph-google-play-logo"></i>
-    
-</footer>
+                        <a href="#"></a>
+                        <span>Seja um franqueado</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+    </footer>
 </body>
+
 </html>
