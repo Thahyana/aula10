@@ -33,6 +33,12 @@
             --xanthous: #ffc971ff;
         }
 
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
         .dropdown-menu {
             transform: translateY(-10px);
             opacity: 0;
@@ -235,7 +241,7 @@
             updateCarousel();
         }, 3000);
     </script>
-      <footer>
+    <footer>
         <div>
             <div>
                 <div>
@@ -243,18 +249,20 @@
                 </div>
                 <img class="block" src="footer.png" alt="Baixe nosso aplicativo">
                 <div class="flex justify-end -my-50 ml-1">
-                    <div class="rounded-[5%] text-center p-3 border border-gray-200 border-3 bg-black text-white w-70 h-30 text-xl font-medium mr-20">
+                    <div
+                        class="rounded-[5%] text-center p-3 border border-gray-200 border-3 bg-black text-white w-70 h-30 text-xl font-medium mr-20">
                         <a href="#" class="flex justify-center mt-4 menu-link text-white
                     hover:text-orange-600">
                             <i class="ph ph-apple-logo" style="font-size: 60px"></i>
                             <span class="ml-3">Disponível na <br> App Store</span>
                         </a>
                     </div>
-                    <div class="rounded-[5%] text-center p-3 border border-gray-200 border-3 bg-black text-white w-70 h-30 text-xl font-medium mr-20">
+                    <div
+                        class="rounded-[5%] text-center p-3 border border-gray-200 border-3 bg-black text-white w-70 h-30 text-xl font-medium mr-20">
                         <a href="#" class="flex justify-center mt-4 menu-link text-white hover:text-orange-600">
                             <i class="ph ph-google-play-logo" style="font-size: 60px"></i>
                             <span class="ml-3">Disponível no <br> Google play</span>
-                         </a>
+                        </a>
                     </div>
                 </div>
             </div>
