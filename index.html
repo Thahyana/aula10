@@ -62,8 +62,8 @@
     </style>
 </head>
 
-<body class="bg-[#ffe6a7ff] min-h-screen overflow-x-hidden">
-    <header class="bg-[#ffb627ff] mt-1 shadow-lg sticky top-0 z-50">
+<body class="bg-[#ffe6a7ff] min-h-screen overflow-x-hidden border-box">
+    <header class="bg-[#ffb627ff] shadow-lg sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-8">
             <div class="flex justify-between h-16 pt-4">
                 <div class="flex-shrink-0">
@@ -82,23 +82,23 @@
                 <nav class="flex space-x-8 pr-15">
                     <div>
                         <a href="#" class="menu-link text-gray-700
-                    hover:text-blue-600 px-4 rounded-md
-                    text-lg font-medium hover:bg-blue-50 transition-colors duration-200 p-3">
+                    hover:text-orange-600 px-4 rounded-md
+                    text-lg font-medium hover:bg-orange-300 transition-colors duration-200 p-3">
 
                             Início
                         </a>
                     </div>
                     <div class="dropdown relative">
                         <a href="#" class="menu-link text-gray-700
-                    hover:text-blue-600 px-4 rounded-md
-                    text-lg font-medium hover:bg-blue-50 transition-colors duration-200 p-3">
+                    hover:text-orange-600 px-4 rounded-md
+                    text-lg font-medium hover:bg-white transition-colors duration-200 p-3">
                             Cupons
                         </a>
                     </div>
                     <div class="dropdown relative">
                         <a href="#" class="menu-link text-gray-700
-                    hover:text-blue-600 px-4 rounded-md
-                    text-lg font-medium hover:bg-blue-50 transition-colors duration-200 p-3">
+                    hover:text-orange-600 px-4 rounded-md
+                    text-lg font-medium hover:bg-white transition-colors duration-200 p-3">
                             Delivery
                         </a>
                     </div>
@@ -107,8 +107,8 @@
                         <div class="dropdown relative list-none">
                             <li>
                                 <button class="menu-link flex cursor-pointer text-gray-700
-                    hover:text-blue-600 px-4 rounded-md
-                    text-lg font-medium hover:bg-blue-50 transition-colors duration-200 p-3 -my-3">
+                    hover:text-orange-600 px-4 rounded-md
+                    text-lg font-medium hover:bg-white transition-colors duration-200 p-3 -my-3">
                                     Cardápio
                             <li class="dropdown:hover arrow ml-1">
 
@@ -116,20 +116,20 @@
                                 </button>
                             </li>
                             <ul class="bg-orange-50 rounded-[5%] dropdown-menu absolute mt-5">
-                                <li class="flex cursor-pointer rounded-[10%]  hover:text-blue-600 px-4 rounded-md
-                    text-lg font-medium hover:bg-blue-50 transition-colors duration-200 mb-3 p-1">
+                                <li class="flex cursor-pointer rounded-[10%]  hover:text-orange-600 px-4 rounded-md
+                    text-lg font-medium hover:bg-white transition-colors duration-200 mb-3 p-1">
                                     <a href="#"></a>
                                     <span>Hambúrgueres</span>
                                 </li>
-                                <li class="flex cursor-pointer rounded-[10%]  hover:text-blue-600 px-4 rounded-md
-                    text-lg font-medium hover:bg-blue-50 transition-colors duration-200 mb-3 p-1">
+                                <li class="flex cursor-pointer rounded-[10%]  hover:text-orange-600 px-4 rounded-md
+                    text-lg font-medium hover:bg-white transition-colors duration-200 mb-3 p-1">
                                     <a href="#"></a>
                                     <span>Acompanhamentos</span>
                                 </li>
                                 <div>
                                     <li class="relative group">
-                                        <button class="cursor-pointer rounded-[10%] hover:text-blue-600 px-4 rounded-md
-                   text-lg font-medium hover:bg-blue-50 transition-colors duration-200 mb-3">
+                                        <button class="flex items-center justify-between cursor-pointer rounded-[10%]  hover:text-orange-600 px-4 rounded-md
+                    text-lg font-medium hover:bg-white transition-colors duration-300 mb-3 p-1">
                                             Bebidas
                                             <i class="ph ph-caret-right" style="font-size: 15px;"></i>
                                         </button>
@@ -137,24 +137,24 @@
                                         <div class="hidden group-hover:block">
                                             <ul
                                                 class="bg-orange-50 rounded-[5%] absolute left-full top-0 ml-1 min-w-[200px] shadow-lg">
-                                                <li class="cursor-pointer hover:text-blue-600 px-4 rounded-md
-                       text-lg font-medium hover:bg-blue-50 transition-colors duration-200 p-1">
+                                                <li class="cursor-pointer hover:text-orange-600 px-4 rounded-md
+                       text-lg font-medium hover:bg-white transition-colors duration-300 p-1 ">
                                                     <a href="#">
 
 
                                                         <span>Refrigerantes</span>
                                                     </a>
                                                 </li>
-                                                <li class="cursor-pointer hover:text-blue-600 px-4 rounded-md
-                       text-lg font-medium hover:bg-blue-50 transition-colors duration-200 p-1">
+                                                <li class="cursor-pointer hover:text-orange-600 px-4 rounded-md
+                       text-lg font-medium hover:bg-white transition-colors duration-300 p-1">
                                                     <a href="#">
 
 
                                                         <span>Sucos</span>
                                                     </a>
                                                 </li>
-                                                <li class="cursor-pointer hover:text-blue-600 px-4 rounded-md
-                       text-lg font-medium hover:bg-blue-50 transition-colors duration-200 p-1">
+                                                <li class="cursor-pointer hover:text-orange-600 px-4 rounded-md
+                       text-lg font-medium hover:bg-white transition-colors duration-300 p-1">
                                                     <a href="#">
 
 
@@ -174,12 +174,12 @@
     </header>
 
     <main>
-        <div class="carousel-container max-w-[1152px] w-full overflow-hidden relative mx-auto">
+        <div class="carousel-container w-full overflow-hidden relative">
             <div class="carousel-slide flex transition-transform duration-500 ease-in-out">
-                <img src="hamb1.jpg" alt="Um delicioso Hambúrguer" class="w-full h-[768px] object-cover flex-shrink-0">
-                <img src="hamb2.png" alt="Um delicioso Hambúrguer" class="w-full h-[768px] object-cover flex-shrink-0">
-                <img src="hamb3.png" alt="Um delicioso Hambúrguer" class="w-full h-[768px] object-cover flex-shrink-0">
-                <img src="hamb4.png" alt="Um delicioso Hambúrguer" class="w-full h-[768px] object-cover flex-shrink-0">
+                <img src="Assets/hamb1.jpg" alt="Um delicioso Hambúrguer" class="w-full h-[768px] object-cover flex-shrink-0">
+                <img src="Assets/hamb2.png" alt="Um delicioso Hambúrguer" class="w-full h-[768px] object-cover flex-shrink-0">
+                <img src="Assets/hamb3.png" alt="Um delicioso Hambúrguer" class="w-full h-[768px] object-cover flex-shrink-0">
+                <img src="Assets/hamb4.png" alt="Um delicioso Hambúrguer" class="w-full h-[768px] object-cover flex-shrink-0">
             </div>
 
             <button
@@ -198,6 +198,219 @@
                 <div class="w-3 h-3 rounded-full bg-white/50"></div>
             </div>
         </div>
+
+        <div class="mt-6">
+            <h2 class="flex justify-center font-semibold text-4xl"> Escolha o seu favorito</h2>
+            <h2 class="flex ml-15 mt-6 font-semibold text-3xl"> Hambúrgueres</h2>
+            <div class="flex flex-col mt-10">
+                <div class="flex ml-15">
+                    <img class="h-40 w-40 rounded-[10%]" src="Assets/hamburguer1.png" alt="Hambúrguer artesanal">
+                     <div class="flex flex-col ml-6">
+                    <p class="font-semibold text-justify">Nosso campeão de vendas! O hambúrguer REALEZA é a combinação perfeita e suculenta que você procura. Ele é montado com um Pão de Brioche selado <br> na manteiga, o nosso Blend da Casa de 180g (uma mistura de Acém e Costela) grelhado ao ponto, coberto por duas fatias de Queijo Provolone <br> levemente defumado e derretido. Para o crocante, adicionamos Bacon artesanal em tiras extra crocantes e finalizamos com a nossa lendária Maionese de <br> Alho-Poró da Casa (receita secreta), alface, cebola e tomate fresquinhos.</p>
+                     <div class="flex items-center gap-4 mt-4">
+    <span class="text-2xl font-bold text-green-600">R$ 29,90</span>
+    <a href="#" class="cursor-pointer hover:text-orange-600 rounded-md text-lg font-medium hover:bg-white transition-colors duration-300 p-1">Adicionar ao carrinho</a>
+</div>
+                </div>
+            </div>
+                
+                <div class="flex flex-col mt-6">
+    <div class="flex ml-15">
+        <img class="h-40 w-40 rounded-[10%]" src="Assets/hamburguer2.png" alt="Hambúrguer artesanal">
+        <div class="flex flex-col ml-6">
+            <p class="font-semibold text-justify">
+                Este é o nosso clássico elevado, o lanche perfeito para quem ama a combinação tradicional de forma artesanal. O CLÁSSICO PERFEITO começa com um <br> Pão de Gergelim macio, recheado com um Blend suculento de $\text{160g}$ e uma fatia generosa de Queijo Cheddar que derrete sobre a carne. Para o <br> toque especial, leva a nossa Maionese Defumada da Casa (aplicada na base e no topo), Picles agridoces em rodelas e fatias de Tomate e Alface <br> Americana crocante. Uma explosão de sabores equilibrados, simples e inesquecível.
+            </p>
+            <div class="flex items-center gap-4 mt-4">
+    <span class="text-2xl font-bold text-green-600">R$ 39,90</span>
+    <a href="#" class="cursor-pointer hover:text-orange-600 rounded-md text-lg font-medium hover:bg-white transition-colors duration-300 p-1">Adicionar ao carrinho</a>
+</div>
+        </div>
+    </div>
+</div>
+
+<div class="flex flex-col mt-6">
+    <div class="flex ml-15">
+        <img class="h-40 w-40 rounded-[10%]" src="Assets/hambuerguer3.jpg" alt="Hambúrguer artesanal">
+        <div class="flex flex-col ml-6">
+            <p class="font-semibold text-justify">Uma experiência de sabor inesquecível, unindo a força do queijo azul com a doçura da cebola. O GOURMET DE FAZENDA é montado em um Pão <br> Australiano levemente adocicado. Ele leva nosso suculento Blend Exclusivo de 180g coberto por um delicioso Creme de Queijo Gorgonzola <br> (derretido no ponto certo) e generosas porções de Cebola Caramelizada no açúcar mascavo, para um toque agridoce. A Rúcula fresca garante <br> a picância e o frescor, tudo finalizado com um toque do nosso Molho Honey Mustard artesanal.</p>
+            <div class="flex items-center gap-4 mt-4">
+    <span class="text-2xl font-bold text-green-600">R$ 21,90</span>
+    <a href="#" class="cursor-pointer hover:text-orange-600 rounded-md text-lg font-medium hover:bg-white transition-colors duration-300 p-1">Adicionar ao carrinho</a>
+</div>
+        </div>
+    </div>
+</div>
+        </div>
+
+        <div class="mt-6">
+            <h2 class="flex ml-15 mt-6 font-semibold text-3xl">Acompanhamentos</h2>
+            <div class="flex flex-col mt-10">
+                <div class="flex ml-15">
+                    <img class="h-40 w-40 rounded-[10%]" src="Assets/batata.jpg" alt="Batata frita crocante">
+                     <div class="flex flex-col ml-6">
+                    <p class="font-semibold text-justify">O sabor que todo mundo ama, elevado à perfeição. Nossas batatas são cortadas finas e fritas em dois estágios para garantir aquela crocância <br> inconfundível que você ouve antes mesmo de morder. Temperadas apenas com o nosso sal marinho especial na medida certa, elas são o <br> seu comfort food ideal. Não se esqueça de pedir com a sua maionese da casa para a experiência completa!</p>
+                     <div class="flex items-center gap-4 mt-4">
+    <span class="text-2xl font-bold text-green-600">R$ 15,00 (Média) | R$ 22,00 (Grande)</span>
+    <a href="#" class="cursor-pointer hover:text-orange-600 rounded-md text-lg font-medium hover:bg-white transition-colors duration-300 p-1">Adicionar ao carrinho</a>
+</div>
+                </div>
+            </div>
+                
+                <div class="flex flex-col mt-6">
+    <div class="flex ml-15">
+        <img class="h-40 w-40 rounded-[10%]" src="Assets/cheddarbacon.jpg" alt="Batata cheddar e bacon">
+        <div class="flex flex-col ml-6">
+            <p class="font-semibold text-justify">
+                A experiência definitiva! Imagine uma montanha irresistível das nossas batatas, afogada em um **creme de Queijo Cheddar quentíssimo e <br> aveludado, seguido por uma explosão de sabor e textura do nosso bacon artesanal defumado, picado em cubos extra-crocantes. Esta é <br> uma porção pesada e inesquecível, que exige o garfo e promete ser a estrela da sua mesa.
+            </p>
+            <div class="flex items-center gap-4 mt-4">
+    <span class="text-2xl font-bold text-green-600">R$ 23,90</span>
+    <a href="#" class="cursor-pointer hover:text-orange-600 rounded-md text-lg font-medium hover:bg-white transition-colors duration-300 p-1">Adicionar ao carrinho</a>
+</div>
+        </div>
+    </div>
+</div>
+        </div>
+
+        <div class="mt-6">
+            <h2 class="flex ml-15 mt-6 font-semibold text-3xl">Bebidas</h2>
+            <h2 class="flex ml-15 mt-6 font-semibold text-xl">Refrigerantes</h2>
+            <div class="flex flex-col mt-10">
+                <div class="flex ml-15">
+                    <img class="h-40 w-40 rounded-[10%]" src="Assets/coca.jpg" alt="Coca Cola lata">
+                     <div class="flex flex-col ml-6">
+                    <p class="font-semibold text-justify">Não há nada melhor para acompanhar seu lanche do que o sabor inconfundível de uma Coca-Cola gelada! Com sua efervescência única e <br> sabor original que atravessa gerações, ela é a parceira ideal que zera o paladar e prepara você para a próxima mordida suculenta. É o clássico que nunca erra!</p>
+                     <div class="flex items-center gap-4 mt-4">
+    <span class="text-2xl font-bold text-green-600">R$ 6,90</span>
+    <a href="#" class="cursor-pointer hover:text-orange-600 rounded-md text-lg font-medium hover:bg-white transition-colors duration-300 p-1">Adicionar ao carrinho</a>
+</div>
+                </div>
+            </div>
+                
+                <div class="flex flex-col mt-6">
+    <div class="flex ml-15">
+        <img class="h-40 w-40 rounded-[10%]" src="Assets/guarana.jpg" alt="Guaraná lata">
+        <div class="flex flex-col ml-6">
+            <p class="font-semibold text-justify">
+                A "Coisa Nossa" que combina com TUDO! Se você busca um sabor tipicamente brasileiro, levemente frutado e com aquela acidez deliciosa, o <br> Guaraná Antarctica é a pedida perfeita. Extremamente refrescante e leve, ele corta a gordura do hambúrguer e da batata com maestria, <br> garantindo um respiro entre as mordidas. Uma explosão de refrescância tropical para o seu pedido.
+            </p>
+            <div class="flex items-center gap-4 mt-4">
+    <span class="text-2xl font-bold text-green-600">R$ 5,90</span>
+    <a href="#" class="cursor-pointer hover:text-orange-600 rounded-md text-lg font-medium hover:bg-white transition-colors duration-300 p-1">Adicionar ao carrinho</a>
+</div>
+        </div>
+    </div>
+</div>
+
+
+
+<div>
+    <h2 class="flex ml-15 mt-6 font-semibold text-xl">Sucos (300ml)</h2>
+            <div class="flex flex-col mt-10">
+                <div class="flex ml-15">
+                    <img class="h-40 w-40 rounded-[10%]" src="Assets/laranja.jpg" alt="Suco de laranja natural">
+                     <div class="flex flex-col ml-6">
+                    <p class="font-semibold text-justify">Suco de Laranja: Energia Cítrica Espremida na Hora
+                    O clássico que não pode faltar, elevado à sua forma mais fresca. Nosso Suco de Laranja é <br> espremido na hora, garantindo a acidez ideal e a doçura natural da fruta. Uma explosão de Vitamina C que zera o paladar entre uma mordida e <br> outra, oferecendo um frescor incomparável. É o shot de energia e vitalidade que a sua refeição precisa.</p>
+                     <div class="flex items-center gap-4 mt-4">
+    <span class="text-2xl font-bold text-green-600">R$ 10,90</span>
+    <a href="#" class="cursor-pointer hover:text-orange-600 rounded-md text-lg font-medium hover:bg-white transition-colors duration-300 p-1">Adicionar ao carrinho</a>
+</div>
+                </div>
+            </div>
+                
+                <div class="flex flex-col mt-6">
+    <div class="flex ml-15">
+        <img class="h-40 w-40 rounded-[10%]" src="Assets/manga.jpg" alt="Suco de manga natural">
+        <div class="flex flex-col ml-6">
+            <p class="font-semibold text-justify">
+                Suco de Manga: O Néctar Dourado
+                Deliciosamente denso e aveludado, este suco é uma ode à doçura tropical. Feito com a polpa selecionada da <br> manga mais madura, ele traz um sabor marcante e uma textura que beira o cremoso. É o nosso "ouro em forma de suco", satisfazendo <br> como um pequeno lanche e refrescando com o legítimo sabor do Brasil. Servido gelado, é pura indulgência nutritiva.
+            </p>
+            <div class="flex items-center gap-4 mt-4">
+    <span class="text-2xl font-bold text-green-600">R$ 10,90</span>
+    <a href="#" class="cursor-pointer hover:text-orange-600 rounded-md text-lg font-medium hover:bg-white transition-colors duration-300 p-1">Adicionar ao carrinho</a>
+</div>
+        </div>
+    </div>
+    
+</div>
+<div class="flex flex-col mt-6">
+    <div class="flex ml-15">
+        <img class="h-40 w-40 rounded-[10%]" src="Assets/sucomorango.jpg" alt="Suco de morango natural">
+        <div class="flex flex-col ml-6">
+            <p class="font-semibold text-justify">
+               Suco de Morango: A Doçura Vibrante
+                Um suco de cor vibrante e sabor irresistível. Batido com morangos selecionados, ele une a doçura natural da <br> fruta com uma leve acidez refrescante, criando uma bebida encorpada e aromática. Servido no ponto certo de gelado, é o suco que conquista <br> todas as idades, sendo perfeito para quem busca um toque frutado e doce na medida.
+            </p>
+            <div class="flex items-center gap-4 mt-4">
+    <span class="text-2xl font-bold text-green-600">R$ 12,90</span>
+    <a href="#" class="cursor-pointer hover:text-orange-600 rounded-md text-lg font-medium hover:bg-white transition-colors duration-300 p-1">Adicionar ao carrinho</a>
+</div>
+        </div>
+    </div>
+    <div class="flex flex-col mt-6">
+    <div class="flex ml-15">
+        <img class="h-40 w-40 rounded-[10%]" src="Assets/maracuja.jpg" alt="Suco de maracuja natural">
+        <div class="flex flex-col ml-6">
+            <p class="font-semibold text-justify">
+                Suco de Maracujá: O Calmante Refrescante Nosso Maracujá é batido na hora, resultando em um suco que une a acidez vibrante da fruta com a doçura <br> na medida. É a bebida ideal para quem busca uma pausa relaxante, oferecendo aquele frescor intenso que "quebra" a refeição. Um clássico tropical <br> com propriedades naturalmente calmantes, servido bem gelado para despertar os sentidos.
+            </p>
+            <div class="flex items-center gap-4 mt-4">
+    <span class="text-2xl font-bold text-green-600">R$ 12,90</span>
+    <a href="#" class="cursor-pointer hover:text-orange-600 rounded-md text-lg font-medium hover:bg-white transition-colors duration-300 p-1">Adicionar ao carrinho</a>
+</div>
+        </div>
+    </div>
+    
+</div>
+</div>
+        </div>
+
+
+
+
+
+
+
+
+          <div class="mt-6">
+            <h2 class="flex ml-15 mt-6 font-semibold text-xl">Smoothies (500 ml)</h2>
+            <div class="flex flex-col mt-10">
+                <div class="flex ml-15">
+                    <img class="h-40 w-40 rounded-[10%]" src="Assets/morango.jpg" alt="Smoothie de morango">
+                     <div class="flex flex-col ml-6">
+                    <p class="font-semibold text-justify">Smoothie de Morango: Nuvem de Frutas e Frescor
+                    Imagine um abraço gelado e cremoso! Este smoothie é batido até atingir a consistência de um <br> sorvete, combinando morangos frescos e congelados com um lácteo suave. O resultado é uma bebida espessa, naturalmente doce e com a acidez <br> vibrante do morango, que dança na boca. É a opção perfeita para se refrescar de forma leve, nutritiva e com um toque de milkshake de fruta.</p>
+                     <div class="flex items-center gap-4 mt-4">
+    <span class="text-2xl font-bold text-green-600">R$ 18,90</span>
+    <a href="#" class="cursor-pointer hover:text-orange-600 rounded-md text-lg font-medium hover:bg-white transition-colors duration-300 p-1">Adicionar ao carrinho</a>
+</div>
+                </div>
+            </div>
+                
+                <div class="flex flex-col mt-6">
+    <div class="flex ml-15">
+        <img class="h-40 w-40 rounded-[10%]" src="Assets/chocolate.jpg" alt="Smoothie de chocolate">
+        <div class="flex flex-col ml-6">
+            <p class="font-semibold text-justify">
+                Smoothie de Chocolate: Indulgência Aveludada
+                Para os amantes do cacau, apresentamos a versão saudável da sobremesa de chocolate que <br> você pode beber! Nosso smoothie é feito com uma base de banana congelada, cacau puro de alta qualidade e um toque lácteo, resultando em <br> uma textura incrivelmente densa e aveludada. Ele é intenso no sabor, rico, e proporciona aquela sensação de puro prazer que só um bom <br> chocolate oferece, mas com o frescor de uma bebida gelada.
+            </p>
+            <div class="flex items-center gap-4 mt-4">
+    <span class="text-2xl font-bold text-green-600">R$ 16,90</span>
+    <a href="#" class="cursor-pointer hover:text-orange-600 rounded-md text-lg font-medium hover:bg-white transition-colors duration-300 p-1">Adicionar ao carrinho</a>
+</div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
     </main>
     <script>
         const carousel = document.querySelector('.carousel-slide');
@@ -235,13 +448,14 @@
             updateCarousel();
         }, 3000);
     </script>
-    <footer>
-        <div>
+
+    <figure class="mt-6">
+            <div>
             <div>
                 <div>
 
                 </div>
-                <img class="block" src="footer.png" alt="Baixe nosso aplicativo">
+                <img class="block" src="Assets/footer.png" alt="Baixe nosso aplicativo">
                 <div class="flex justify-end -my-50 ml-1">
                     <div
                         class="rounded-[5%] text-center p-3 border border-gray-200 border-3 bg-black text-white w-70 h-30 text-xl font-medium mr-20">
@@ -262,10 +476,12 @@
             </div>
 
         </div>
-
-        <div class="block mt-100">
-            <div class="flex justify-center h-1px w-2px">
-                <img src="Burgz_logo_resized.png" alt="Logo Burgz">
+        </figure>
+        
+    <footer>
+        <div class="mt-80">
+            <div class="flex justify-center">
+                <img class="h-40 w-40" src="Assets/Burgz_logo_resized.png" alt="Logo Burgz">
             </div>
             <div>
                 <ul class="flex justify-evenly bg-[#ffb627ff] mt-1 shadow-lg sticky top-0 z-50">
