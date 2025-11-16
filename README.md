@@ -53,3 +53,13 @@ Tailwind CSS v4: Framework de estilização via CDN
 JavaScript (Vanilla): Lógica de interação
 Phosphor Icons: Biblioteca de ícones
 CSS Custom Properties: Variáveis de cores personalizadas
+
+📄 Licença
+Este projeto é de uso livre para fins educacionais e de portfólio.
+👨‍💻 Autor
+Thahyana Costa
+
+<div align="center">
+🍔 Feito com ❤️ e muita fome!
+⭐ Se este projeto foi útil, considere dar uma estrela!
+</div>Tentar novamente
